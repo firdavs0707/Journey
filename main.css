@@ -1,0 +1,76 @@
+body {
+  background-image: url('./img/istockphoto-619394704-612x612.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+.span {
+  font-size: 20px;
+  margin-left: 5px;
+  color: goldenrod;
+}
+
+.body-dubai {
+  background-image: url('./img/9f2abe7444d87f6da730ac4986f52464-burj-khalifa-vector-art-dubai-highest-skyscraper.jpg');
+  background-size: cover;
+  background-position: center -200px;
+  background-repeat: no-repeat;
+}
+
+.box2 {
+  font-size: 20px;
+}
+
+.body-malasia {
+  background-image: url('./img/istockphoto-466842820-612x612.jpg');
+  background-size: cover;
+  background-position: center -200px;
+  background-repeat: no-repeat;
+}
+
+.body-turkiya {
+  background-image: url('./img/tur.webp');
+  background-size: cover;
+  background-position: center -200px;
+  background-repeat: no-repeat;
+}
+
+.turkiya {
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid #c31414;
+  padding: 5px;
+  color: black;
+  background-color: white;
+  transition: transform ease 1.3s;
+}
+
+.malasia {
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid goldenrod;
+  padding: 5px;
+  color: black;
+  background-color: white;
+}
+
+.dubai {
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid #2a297f;
+  padding: 5px;
+  color: black;
+  background-color: white;
+  transition: transform ease 1.3s;
+}
+
+.malasia:hover {
+  transform: scale(1.1);
+}
+
+.dubai:hover {
+  transform: rotateX(360deg);
+}
+.turkiya:hover {
+  transform: rotateY(360deg);
+}

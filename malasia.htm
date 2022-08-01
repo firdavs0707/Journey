@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malasia</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body class="body-malasia">
+  <div class="big-box">
+  <h3>Eslatma: Malasia ga uchish 1500$</h3>
+  <div class="box">
+    <form class="form">
+      <input placeholder="Ismingizni kiriting" class="input1" type="text" value=""><br>
+      <input placeholder="Pulingizni kiriting" class="input2" type="number" value=""><span class="span">$</span> <br>
+      <br><button class="btn">Jonatish✈️</button><br>
+    </form><br>
+    <a href="index.html"><button>👈Ortga qaytish</button></a>
+  </div>
+  
+  <div class="box2">
+    <p class="result"></p>
+  </div>
+</div>
+  <script>
+    var form = document.querySelector('.form');
+    var input1 = document.querySelector('.input1');
+    var input2 = document.querySelector('.input2');
+    var btn = document.querySelector('.btn');
+    var result = document.querySelector('.result');
+    var money = 1500;
+    form.addEventListener('submit', function (evt){
+      evt.preventDefault();
+
+      if (isNaN(input2.value)) {
+        result.textContent = 'Son kiriting'
+      } 
+      else if (input2.value == 0) {
+        result.textContent = `Xechnima kiritilmadi! ${input1.value}`
+      }
+      else if (input2.value < money) {
+        result.textContent = `${(money - input2.value)} dollar yetmadi ${input1.value}`
+      }
+      else if(input2.value >= money){
+        result.textContent = ` ${input1.value} Dubai ga ertaga uchib ketasiz va sizda yana ${(input2.value - money)} dollar ortib qoldi`
+      }
+    })
+  </script>
+</body>
+</html>
